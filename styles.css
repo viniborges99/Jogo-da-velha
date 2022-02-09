@@ -44,36 +44,38 @@ body {
   position: relative;
 }
 
+/*faz o cursor ficar com bloqueio*/
 .cell.x,
 .cell.circle {
   cursor: not-allowed;
 }
 
+/*os filhos do elemento board, esses serão o numero das casas para tirar a borda*/
 .cell:nth-child(1),
 .cell:nth-child(2),
 .cell:nth-child(3) {
   border-top: none;
 }
-
+/*os filhos do elemento board, esses serão o numero das casas para tirar a borda*/
 .cell:nth-child(1),
 .cell:nth-child(4),
 .cell:nth-child(7) {
   border-left: none;
 }
-
+/*os filhos do elemento board, esses serão o numero das casas para tirar a borda*/
 .cell:nth-child(7),
 .cell:nth-child(8),
 .cell:nth-child(9) {
   border-bottom: none;
 }
-
+/*os filhos do elemento board, esses serão o numero das casas para tirar a borda*/
 .cell:nth-child(3),
 .cell:nth-child(6),
 .cell:nth-child(9) {
   border-right: none;
 }
 
-/* X */
+/* formando o X */
 .cell.x::before,
 .cell.x::after,
 .board.x .cell:not(.x):not(.circle):hover::after,
@@ -95,7 +97,7 @@ body {
   transform: rotate(-45deg);
 }
 
-/* Circle */
+/* formando o Circlo */
 .cell.circle::before,
 .cell.circle::after,
 .board.circle .cell:not(.x):not(.circle):hover::after,
